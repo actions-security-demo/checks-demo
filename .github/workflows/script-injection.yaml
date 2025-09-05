@@ -1,0 +1,12 @@
+name: Script Injection PoC PR Workflow
+
+on:
+  pull_request:
+
+jobs:
+  exploit-vulnerability:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Pull Request Title
+        run: |
+          echo "hello world"
