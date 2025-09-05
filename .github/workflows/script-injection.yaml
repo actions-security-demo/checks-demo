@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Echo Pull Request Title
         run: |
-          echo "hello world"
+          echo "Pull Request Title: ${{ github.event.pull_request.title }}"
